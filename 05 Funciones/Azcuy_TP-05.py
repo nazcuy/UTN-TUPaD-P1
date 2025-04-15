@@ -24,3 +24,19 @@ nombre_nuevo = input("Ingrese su nombre: ")
 saludo = saludar_usuario(nombre_nuevo)
 print(saludo)
 """
+"""3. Crear una función llamada informacion_personal(nombre, apellido,
+edad, residencia) que reciba cuatro parámetros e imprima: “Soy
+[nombre] [apellido], tengo [edad] años y vivo en [residencia]”. Pe-
+dir los datos al usuario y llamar a esta función con los valores in-
+gresados."""
+"""
+def informacion_personal(nombre, apellido, edad, residencia):
+    print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}.")
+
+nom_nvo = input("Ingrese su nombre: ")
+ape_nvo = input("Ingrese su apellido: ")
+edad_nva = input("Ingrese su edad: ")
+resid_nva = input ("Ingrese su lugar de residencia: ")
+informacion_personal(nom_nvo, ape_nvo, edad_nva, resid_nva)
+"""
+
