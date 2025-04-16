@@ -118,4 +118,16 @@ peso_usuario = float(input("Ingrese su peso en kg.\nUtilice punto '.' para decim
 alt_usuario = float(input("Ingrese su altura.\nUtilice punto '.' para decimales: "))
 print(f"Su índice de masa corporal es: {calcular_imc(peso_usuario, alt_usuario):.2f}--")
 """
+"""9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
+una temperatura en grados Celsius y devuelva su equivalente en
+Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
+resultado usando la función."""
+"""
+def celsius_a_fahrenheit(celsius):
+    tempF = float((celsius * (9/5)) + 32)
+    return tempF
+
+tempC = float(input("Ingrese la temperatura en grados Celsius.\nUtilice punto '.' para decimales: "))
+print(f"La temperatura en Fahrenheith es: {celsius_a_fahrenheit(tempC):.2f}--")
+"""
 """"""
