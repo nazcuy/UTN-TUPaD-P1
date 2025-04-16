@@ -83,3 +83,25 @@ def tabla_multiplicar(numero):
 num_a_multip = int(input("Ingrese un número: "))
 tabla_multiplicar(num_a_multip)
 """
+"""7. Crear una función llamada operaciones_basicas(a, b) que reciba
+dos números como parámetros y devuelva una tupla con el resulta-
+do de sumarlos, restarlos, multiplicarlos y dividirlos. Mostrar los re-
+sultados de forma clara."""
+"""
+def operaciones_basicas(a, b):
+    suma = a + b
+    resta = a - b
+    multiplic = a * b
+    print(f"La suma de {a} y {b} es: {suma}.-")
+    print(f"La resta de {a} y {b} es: {resta}.-")
+    print(f"La multiplicación de {a} y {b} es: {multiplic}.-")
+    if b < 1:
+        print("No se puede dividir por cero.")
+    else:
+        div = a / b
+        print(f"La división de {a} y {b} es: {div}.-")
+
+a_usuario = int(input("Ingrese un número: "))
+b_usuario = int(input("Ingrese otro número: "))
+operaciones_basicas(a_usuario, b_usuario)
+"""
