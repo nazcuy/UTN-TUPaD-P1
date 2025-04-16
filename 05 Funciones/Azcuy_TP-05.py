@@ -58,3 +58,15 @@ radio_nvo = float(input("Ingrese el radio del círculo: "))
 print(f"El area del círculo es: {calcular_area_circulo(radio_nvo):.2f}")
 print(f"El perímetro del círculo es: {calcular_perimetro_circulo(radio_nvo):.2f}")
 """
+"""5. Crear una función llamada segundos_a_horas(segundos) que reciba
+una cantidad de segundos como parámetro y devuelva la cantidad
+de horas correspondientes. Solicitar al usuario los segundos y mos-
+trar el resultado usando esta función."""
+"""
+def segundos_a_horas(segundos):
+    horas = segundos/3600
+    return horas
+
+segundos_usuario = float(input("Ingrese los segundos que transformaremos a horas: "))
+print(f"La cantidad de horas es: {segundos_a_horas(segundos_usuario):.2f}")
+"""
