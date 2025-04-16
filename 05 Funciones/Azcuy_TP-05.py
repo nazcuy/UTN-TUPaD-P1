@@ -39,4 +39,22 @@ edad_nva = input("Ingrese su edad: ")
 resid_nva = input ("Ingrese su lugar de residencia: ")
 informacion_personal(nom_nvo, ape_nvo, edad_nva, resid_nva)
 """
+"""4. Crear dos funciones: calcular_area_circulo(radio) que reciba el ra-
+dio como parámetro y devuelva el área del círculo. calcular_peri-
+metro_circulo(radio) que reciba el radio como parámetro y devuel-
+va el perímetro del círculo. Solicitar el radio al usuario y llamar am-
+bas funciones para mostrar los resultados."""
+"""
+from math import pi
+def calcular_area_circulo(radio):
+    area = pi * (radio ** 2)    
+    return area
 
+def calcular_perimetro_circulo(radio):
+    perimetro = 2 * pi * radio
+    return perimetro
+
+radio_nvo = float(input("Ingrese el radio del círculo: "))
+print(f"El area del círculo es: {calcular_area_circulo(radio_nvo):.2f}")
+print(f"El perímetro del círculo es: {calcular_perimetro_circulo(radio_nvo):.2f}")
+"""
