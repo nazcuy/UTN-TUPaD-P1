@@ -23,9 +23,19 @@ print(f"Usando indexación positiva, el penúltimo es: {penultimo}")
 e imprimir la lista resultante por pantalla. 
 Pista: para crear una lista vacía debes colocar los corchetes 
 sin nada en su interior. Por ejemplo: lista_vacia []"""
-
+"""
 lista_vacia = []
 lista_vacia.append("Programar")
 lista_vacia.append("Trabajar")
 lista_vacia.append("Reparar")
 print(lista_vacia)
+"""
+"""4) Reemplazar el segundo y último valor de la lista “animales” con las palabras “loro” y “oso”,
+respectivamente. Imprimir la lista resultante por pantalla. ¡Puedes hacerlo como se muestra
+en los videos o bien investigar cómo funciona el indexing con números negativos"""
+"""
+animales = ["Perro", "Gato", "Conejo", "Pez"]
+animales[1] = "Loro"
+animales[-1] = "Oso"
+print(f"Lista modificada: {animales}")
+"""
