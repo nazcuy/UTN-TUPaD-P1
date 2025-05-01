@@ -90,3 +90,20 @@ compras[0].remove("pan")
 print("Lista modificada: ")
 print(compras)
 """
+"""10) Elaborar una lista anidada llamada “lista_anidada” que contenga los siguientes elementos 
+e imprimir la lista resultante por pantalla:"""
+lista_anidada = []
+# Posición lista_anidada[0]: 15
+lista_anidada.append(15)
+# Posición lista_anidada[1]: True
+lista_anidada.append(True)
+# Posición lista_anidada[2][0]: 25.5
+lista_anidada.append([])
+lista_anidada[2].append(25.5)
+# Posición lista_anidada[2][1]: 57.9
+lista_anidada[2].append(57.9)
+# Posición lista_anidada[2][2]: 30.6
+lista_anidada[2].append(30.6)
+# Posición lista_anidada[3]: False
+lista_anidada.append(False)
+print(f"Lista anidada:\n{lista_anidada}")
