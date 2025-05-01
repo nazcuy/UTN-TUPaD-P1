@@ -19,3 +19,13 @@ print(f"Usando indexación negativa, el penúltimo es: {penultimo}")
 penultimo =elementos[3]
 print(f"Usando indexación positiva, el penúltimo es: {penultimo}")
 """
+"""3) Crear una lista vacía, agregar tres palabras con append 
+e imprimir la lista resultante por pantalla. 
+Pista: para crear una lista vacía debes colocar los corchetes 
+sin nada en su interior. Por ejemplo: lista_vacia []"""
+
+lista_vacia = []
+lista_vacia.append("Programar")
+lista_vacia.append("Trabajar")
+lista_vacia.append("Reparar")
+print(lista_vacia)
