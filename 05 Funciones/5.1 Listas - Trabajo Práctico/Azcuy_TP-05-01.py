@@ -39,3 +39,15 @@ animales[1] = "Loro"
 animales[-1] = "Oso"
 print(f"Lista modificada: {animales}")
 """
+"""5) Analizar el siguiente programa y explicar con tus palabras qué es lo que realiza."""
+"""
+## El programa tiene por objetivo remover el elemento máximo de una lista y mostrar por pantalla la lista modificada.
+
+# Crea una lista de 5 elementos númericos, y la almacena en la variable "números":
+numeros = [8, 15, 3, 22, 7]
+# Utiliza la función "max()" para devolver el valor máximo de la lista. En este caso "22".
+# Luego, la función "remove" busca y elimina el primer elemento que encuentre de ese valor "remove(22)"
+numeros.remove(max(numeros))
+# Imprime en pantalla la nueva lista modificada.
+print(numeros)
+"""
