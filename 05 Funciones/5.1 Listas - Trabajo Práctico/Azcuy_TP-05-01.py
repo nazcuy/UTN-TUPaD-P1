@@ -60,3 +60,10 @@ print("Los primeros 2 elementos son: ")
 print(num[0])
 print(num[1])
 """
+"""7) Reemplazar los dos valores centrales (índices 1 y 2)
+ de la lista “autos” por dos nuevos valores cualesquiera."""
+"""
+autos = ["sedan", "polo", "suran", "gol"]
+autos [1:3] = ["Dodge 1500", "Agile"]
+print(autos)
+"""
