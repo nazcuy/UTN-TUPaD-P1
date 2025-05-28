@@ -109,5 +109,34 @@ Ejemplos:
 contar_bloques(1) → 1 (1)
 contar_bloques(2) → 3 (2 + 1)
 contar_bloques(4) → 10 (4 + 3 + 2 + 1)"""
-
+"""
 def contar_bloques(n):
+    if n == 1:
+        return 1
+    else:
+        return n + contar_bloques(n-1)
+    
+bloques= int(input("Ingrese el número de bloques del nivel más bajo: "))
+print(f"La cantidad de bloques que necesita para construir la pirámide son {contar_bloques(bloques)}")
+"""
+
+"""8) Escribí una función recursiva llamada contar_digito(numero, digito) que reciba un número entero 
+positivo (numero) y un dígito (entre 0 y 9), y devuelva cuántas veces aparece ese dígito dentro del número.
+Ejemplos:
+contar_digito(12233421, 2) → 3
+contar_digito(5555, 5) → 4
+contar_digito(123456, 7) → 0"""
+
+def contar_digito(numero, digito):
+    if numero == 0:
+        return 0
+    ultimo_dig = numero % 10
+    contador = contar_digito(numero//10, digito)
+    if ultimo_dig == digito:
+        return 1 + contador
+    else:
+        return contador
+
+numer = int(input("Ingrese un número: "))
+digit = int(input("Ingrese un sólo dígito del 0 al 9: "))
+print(f"La cantidad de veces que apareció el dígito {digit} en {numer} es: {contar_digito(numer, digit)}")
